@@ -5,13 +5,22 @@ public class Scoreboard {
     private int teamTwoScore;
     private String activeTeam;
 
-    Scoreboard(String one, String two){
+    Scoreboard(String one, String two)
+    {
         teamOne = one;
         teamTwo = two;
         activeTeam = teamOne;
     }
 
-    public String getScore(){
-        return null;
+    public String getScore()
+    {
+        return teamOneScore + "-" + teamTwoScore + "-" + activeTeam;
+    }
+    public void recordPlay(int score)
+    {
+        if (score <0)
+        {
+
+        }
     }
 }
