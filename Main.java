@@ -8,5 +8,6 @@ public class Main {
 
         game.recordPlay(1);
         System.out.println(info);
+        game.recordPlay();
     }
 }

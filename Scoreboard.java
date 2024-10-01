@@ -29,6 +29,7 @@ public class Scoreboard {
             {
                 teamTwoScore += score;
                 activeTeam = teamOne;
+                score;
             }
         }
     }
