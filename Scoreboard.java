@@ -1,3 +1,5 @@
+import java.lang.reflect.AccessFlag;
+
 public class Scoreboard {
     private String teamOne;
     private String teamTwo;
@@ -18,17 +20,21 @@ public class Scoreboard {
     }
     public void recordPlay(int score)
     {
-
-        if(activeTeam.equals(teamOne))
+        if (score > 0)
         {
-            teamOneScore +=score;
-            activeTeam = teamTwo;
+            if (activeTeam.equals(teamOne))
+            {
+                teamOneScore += score;
+            }
+            else if (activeTeam.equals(teamTwo))
+            {
+                teamTwoScore += score;
+            }
         }
-        else if (activeTeam.equals(teamTwo))
+        else
         {
-            teamTwoScore +=score;
-            activeTeam = teamOne;
-
+            if (activeTeam.equals(teamOne)){}
         }
+
     }
 }
