@@ -22,6 +22,18 @@ public class Main {
         info = game.getScore();
         System.out.println(info);
 
+        game.recordPlay(0);
+        game.recordPlay(4);
+        game.recordPlay(0);
+        info = game.getScore();
+        System.out.println(info);
+
+        Scoreboard match = new Scoreboard("Lions", "Tigers");
+        info = match.getScore();
+        System.out.println(info);
+        info = game.getScore();
+        System.out.println(info);
+
 
     }
 }

@@ -33,7 +33,9 @@ public class Scoreboard {
         }
         else
         {
-            if (activeTeam.equals(teamOne)){}
+            if (activeTeam.equals(teamOne)){activeTeam = teamTwo;}
+
+            else if (activeTeam.equals(teamTwo)) {activeTeam = teamOne;}
         }
 
     }
